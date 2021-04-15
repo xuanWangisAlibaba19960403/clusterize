@@ -4,8 +4,7 @@
   "description": "Tiny vanilla JS plugin to display large data sets easily",
   "main": "clusterize.js",
   "style": "clusterize.css",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git@github.com:NeXTs/Clusterize.js.git"

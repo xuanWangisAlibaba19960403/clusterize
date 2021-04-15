@@ -5,26 +5,37 @@
  */
 
 var Clusterize = {
-    "scroll_elem": {},
-    "content_elem": {},
-    "tag": {},
-    "rows_in_block": {},
-    "blocks_in_cluster": {},
-    "show_no_data_row": {},
-    "no_data_text": {},
-    "no_data_class": {},
-    "keep_parity": {},
-    "callbacks": {
-        "clusterWillChange": function() {},
-        "clusterChanged": function() {},
-        "scrollingProgress": function() {}
+  "scroll_elem": {},
+  "content_elem": {},
+  "tag": {},
+  "rows_in_block": {},
+  "blocks_in_cluster": {},
+  "show_no_data_row": {},
+  "no_data_text": {},
+  "no_data_class": {},
+  "keep_parity": {},
+  "callbacks": {
+    "clusterWillChange": function () {
     },
-    "update": function() {},
-    "append": function() {},
-    "prepend": function() {},
-    "refresh": function() {},
-    "getRowsAmount": function() {},
-    "getScrollProgress": function() {},
-    "clear": function() {},
-    "destroy": function() {}
+    "clusterChanged": function () {
+    },
+    "scrollingProgress": function () {
+    }
+  },
+  "update": function () {
+  },
+  "append": function () {
+  },
+  "prepend": function () {
+  },
+  "refresh": function () {
+  },
+  "getRowsAmount": function () {
+  },
+  "getScrollProgress": function () {
+  },
+  "clear": function () {
+  },
+  "destroy": function () {
+  }
 };

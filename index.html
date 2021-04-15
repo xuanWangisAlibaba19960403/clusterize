@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="./clusterize.css" rel="stylesheet">
+  <script src="./my-Clusterize.js"></script>
+  <style>
+    .clusterize-no-data {
+      line-height: 20px;
+    }
+  </style>
+</head>
+<body>
+<!--HTML-->
+<div id="scrollArea" class="clusterize-scroll">
+  <ul id="contentArea" class="clusterize-content">
+    <li class="clusterize-no-data">Loading data…</li>
+  </ul>
+</div>
+<script>
+  const node = document.getElementsByClassName('clusterize-no-data')[0];
+  const documentFragment = document.createDocumentFragment()
+  for (let i = 0 ; i < 999; i++) {
+    documentFragment.appendChild(node.cloneNode(true))
+  }
+  document.getElementById('contentArea').appendChild(documentFragment)
+  // JavaScript
+  var clusterize = new Clusterize({
+    scrollId: 'scrollArea',
+    contentId: 'contentArea'
+  });
+</script>
+</body>
+</html>
